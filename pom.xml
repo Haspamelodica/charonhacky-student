@@ -6,7 +6,7 @@
 	<artifactId>charonhacky.student</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>charonhacky.student</name>
-	<description>Student submission for Charonhacky containing the real secret</description>
+	<description>Student submission for Charonhacky</description>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
