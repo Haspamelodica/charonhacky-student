@@ -11,8 +11,15 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 	</properties>
+	<dependencies>
+		<dependency>
+			<groupId>net.haspamelodica.charon</groupId>
+			<artifactId>student</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+	</dependencies>
 	<build>
-		<sourceDirectory>src</sourceDirectory>
+		<sourceDirectory>${project.basedir}/assignment/src</sourceDirectory>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -20,6 +27,15 @@
 				<version>3.8.1</version>
 				<configuration>
 					<release>19</release>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>exec-maven-plugin</artifactId>
+				<version>3.0.0</version>
+				<configuration>
+					<mainClass>net.haspamelodica.charon.StudentSideRunner</mainClass>
+					<commandlineArgs>${net.haspamelodica.charon.communicationargs}</commandlineArgs>
 				</configuration>
 			</plugin>
 		</plugins>
